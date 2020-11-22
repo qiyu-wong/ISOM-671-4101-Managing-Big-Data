@@ -1,0 +1,7 @@
+node,outDegree,inDegree,pagerank
+Manitoba,41,40,3.136412097
+Nova Scotia,43,52,2.499206276
+Quebec,106.5,107.5,4.922351596
+Alberta,91.5,92,4.666552652
+British Columbia,85.5,85,4.287392112
+Ontario,182,180.5,7.164430438

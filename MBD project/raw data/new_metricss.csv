@@ -1,0 +1,22 @@
+State,Gini,ICU Beds,GDP,Hospitals,Region,Life Expectancy
+California,0.4899,7338,74205,359,Southwest,81.6
+Colorado,0.4586,1597,63882,89,North Central,80.5
+Washington,0.4591,1265,74182,92,Northwest,80.4
+Florida,0.4852,5604,48318,217,Southeast,80
+Georgia,0.4813,2508,55832,145,Southeast,77.8
+Hawaii,0.442,201,64096,22,Pacific Ocean,82.3
+Illinois,0.481,3144,67268,187,Northeast,79.3
+Massachusetts,0.4786,1326,82480,75,Northeast,80.5
+Michigan,0.4695,2423,53209,144,Northeast,78
+North Carolina,0.478,2227,54441,112,Southeast,78
+New Jersey,0.4813,1822,69378,82,Northeast,80.4
+Nevada,0.4577,900,55269,44,Southwest,78.5
+New York,0.5229,3952,85746,166,Northeast,81.3
+Texas,0.48,6199,61167,523,South Central,79.1
+Virginia,0.4705,1654,62563,96,Northeast,79.5
+Ontario,0.33,1122,"59,879",84,Central Canada,82.4
+British Columbia,0.32,304,"59,066",34,West Coast,82.2
+Quebec,0.29,885,"52,384",87,Central Canada,82.6
+Alberta,0.32,292,"80,175",16,Prairie Provinces,81.5
+Manitoba,0.3,93,"53,708",10,Prairie Provinces,80
+Nova Scotia,0.3,141,"46,226",14,Atlantic region,80.5
