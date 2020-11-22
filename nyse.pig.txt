@@ -1,0 +1,16 @@
+daily = LOAD 's3://testingplayground/Hadoop/NYSE_daily' AS (NYSE:chararray, Ticker:chararray, Date:datetime, Open:float, High:float, Low:float, Close:float, Volume:int, Adjusted:float);
+daily = FOREACH daily GENERATE Ticker, Date, Open, High, Low, Close, Volume, Adjusted;
+dividends = LOAD 's3://testingplayground/Hadoop/NYSE_dividends' AS (NYSE:chararray, Ticker1:chararray, Date1:datetime, Dividend:float);
+dividends = FOREACH dividends GENERATE Ticker1, Date1, Dividend;
+
+joined = JOIN daily BY (Ticker, Date), dividends BY (Ticker1, Date1);
+joined = FOREACH joined GENERATE Ticker AS Ticker:chararray, Date AS Date:datetime, Dividend/Close AS Value:float;
+
+max = ORDER joined BY Value DESC;
+max = LIMIT max 1;
+
+min = ORDER joined BY Value ASC;
+min = LIMIT min 1;
+
+dump max;
+dump min;
